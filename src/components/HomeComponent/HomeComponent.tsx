@@ -1,6 +1,6 @@
 import * as React from 'react'
-
-const HomeComponent: React.SFC<{}> = () => {
+import { HomeComponentProps } from './types'
+const HomeComponent: React.SFC<HomeComponentProps> = ({ age }) => {
   return <h1>This is my HomeComponent</h1>
 }
 
