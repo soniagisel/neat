@@ -11,7 +11,7 @@ const Layout: React.SFC<LayoutProps> = ({ children }) => {
     <ThemeProvider theme={createMuiTheme(theme)}>
       <CssBaseline />
       <Header />
-      <Box>{children}</Box>
+      <Box padding={3}>{children}</Box>
     </ThemeProvider>
   )
 }
