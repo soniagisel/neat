@@ -1,8 +1,7 @@
 import React from 'react'
-import './App.css'
 import Routes from './Routes'
 
-const App: React.FC = () => {
+const App: React.SFC = () => {
   return (
     <div className='App'>
       <Routes />
