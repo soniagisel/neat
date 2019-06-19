@@ -1,7 +1,8 @@
 import React from 'react'
 import MaterialTable from 'material-table'
+import { UsersTableProps } from './types'
 
-export default function MaterialTableDemo() {
+const UsersTable: React.SFC<UsersTableProps> = ({ users }) => {
   const [state, setState] = React.useState({
     columns: [
       { title: 'Name', field: 'name' },
@@ -12,20 +13,12 @@ export default function MaterialTableDemo() {
         field: 'birthCity'
       }
     ],
-    data: [
-      { name: 'Mehmet', surname: 'Baran', birthYear: 1987, birthCity: 63 },
-      {
-        name: 'Zerya Betül',
-        surname: 'Baran',
-        birthYear: 2017,
-        birthCity: 34
-      }
-    ]
+    data: users
   })
 
   return (
     <MaterialTable
-      title='Editable Example'
+      title='Users'
       columns={state.columns}
       data={state.data}
       editable={{
@@ -60,3 +53,5 @@ export default function MaterialTableDemo() {
     />
   )
 }
+
+export default UsersTable

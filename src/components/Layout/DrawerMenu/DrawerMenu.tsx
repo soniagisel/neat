@@ -50,7 +50,7 @@ const DrawerMenu: React.SFC<DrawerMenuProps> = ({
         </div>
         <Divider />
         <List>
-          {['Inbox'].map((text, index) => (
+          {['Dashboard'].map((text, index) => (
             <ListItem button key={text}>
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
@@ -61,7 +61,7 @@ const DrawerMenu: React.SFC<DrawerMenuProps> = ({
         </List>
         <Divider />
         <List>
-          {['All mail'].map((text, index) => (
+          {['Backoffice', 'Sign Out'].map((text, index) => (
             <ListItem button key={text}>
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}

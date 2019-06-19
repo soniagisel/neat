@@ -1,4 +1,8 @@
 import { makeStyles } from '@material-ui/styles'
 import { Theme } from '@material-ui/core/styles'
 
-export default makeStyles((theme: Theme) => ({}))
+export default makeStyles((theme: Theme) => ({
+  title: {
+    padding: theme.spacing(2)
+  }
+}))
