@@ -18,7 +18,7 @@ const Header: React.SFC<HeaderProps> = () => {
   return (
     <Box className={classes.root}>
       <AppBar
-        position='fixed'
+        position='relative'
         className={clsx(classes.appBar, {
           [classes.appBarShift]: open
         })}
