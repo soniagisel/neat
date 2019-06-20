@@ -9,9 +9,7 @@ import {
   ListItemIcon,
   ListItemText
 } from '@material-ui/core'
-
 import { useTheme } from '@material-ui/core/styles'
-
 import { DrawerMenuProps } from './types'
 import useStyles from './styles'
 import {
@@ -20,6 +18,14 @@ import {
   Inbox as InboxIcon,
   Mail as MailIcon
 } from '@material-ui/icons'
+import {
+  Link as RouterLink,
+  LinkProps as RouterLinkProps
+} from 'react-router-dom'
+
+const AdapterLink = React.forwardRef<HTMLAnchorElement, RouterLinkProps>(
+  (props, ref) => <RouterLink innerRef={ref as any} {...props} />
+)
 
 const DrawerMenu: React.SFC<DrawerMenuProps> = ({
   open,
@@ -50,23 +56,38 @@ const DrawerMenu: React.SFC<DrawerMenuProps> = ({
         </div>
         <Divider />
         <List>
-          {['Dashboard'].map((text, index) => (
-            <ListItem button key={text}>
+          {[{ text: 'Dashboard', path: '/' }].map((element, index) => (
+            <ListItem
+              button
+              key={element.text}
+              to={element.path}
+              component={AdapterLink}
+              onClick={() => handleDrawerToggle()}
+            >
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
               </ListItemIcon>
-              <ListItemText primary={text} />
+              <ListItemText primary={element.text} />
             </ListItem>
           ))}
         </List>
         <Divider />
         <List>
-          {['Backoffice', 'Sign Out'].map((text, index) => (
-            <ListItem button key={text}>
+          {[
+            { text: 'Backoffice', path: '/admin/users' },
+            { text: 'Sign Out', path: '*' }
+          ].map((element, index) => (
+            <ListItem
+              button
+              key={element.text}
+              to={element.path}
+              component={AdapterLink}
+              onClick={() => handleDrawerToggle()}
+            >
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
               </ListItemIcon>
-              <ListItemText primary={text} />
+              <ListItemText primary={element.text} />
             </ListItem>
           ))}
         </List>
