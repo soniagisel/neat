@@ -1,5 +1,7 @@
 import { makeStyles } from '@material-ui/styles'
 import { Theme } from '@material-ui/core/styles'
+import 'typeface-rock-salt'
+import 'typeface-krub'
 
 const drawerWidth = 240
 
@@ -60,5 +62,9 @@ export default makeStyles((theme: Theme) => ({
   },
   title: {
     flexGrow: 1
+  },
+  fontKrub: {
+    fontFamily: 'Krub',
+    fontWeight: 400
   }
 }))

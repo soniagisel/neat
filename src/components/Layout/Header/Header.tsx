@@ -33,7 +33,7 @@ const Header: React.SFC<HeaderProps> = () => {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant='h6' noWrap>
+          <Typography variant='h6' noWrap className={classes.fontKrub}>
             Neat
           </Typography>
         </Toolbar>
