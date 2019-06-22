@@ -56,7 +56,7 @@ const DrawerMenu: React.SFC<DrawerMenuProps> = ({
         </div>
         <Divider />
         <List>
-          {[{ text: 'Dashboard', path: '/' }].map((element, index) => (
+          {[{ text: 'Dashboard', path: '/dashboard' }].map((element, index) => (
             <ListItem
               button
               key={element.text}
@@ -75,7 +75,7 @@ const DrawerMenu: React.SFC<DrawerMenuProps> = ({
         <List>
           {[
             { text: 'Backoffice', path: '/admin/users' },
-            { text: 'Sign Out', path: '*' }
+            { text: 'Log Out', path: '/' }
           ].map((element, index) => (
             <ListItem
               button

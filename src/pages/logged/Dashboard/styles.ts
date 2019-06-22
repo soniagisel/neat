@@ -12,6 +12,6 @@ export default makeStyles((theme: Theme) => ({
     fontWeight: 200
   },
   paddingBottom: {
-    paddingBottom: theme.spacing(2)
+    paddingBottom: theme.spacing(5)
   }
 }))
