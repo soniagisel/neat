@@ -1,1 +1,3 @@
-export interface LogInProps {}
+export interface LogInProps {
+  name: string
+}
