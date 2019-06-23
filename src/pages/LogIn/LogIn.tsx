@@ -15,17 +15,18 @@ const LogIn: React.SFC<LogInProps> = () => {
   ) => {
     setValues({ ...values, [name]: event.target.value })
   }
+
   return (
     <Box>
       <Typography
-        variant='h4'
+        variant='h5'
         className={classnames(
           classes.alignCenter,
           classes.paddingBottom,
           classes.fontKrub
         )}
       >
-        Log In
+        Let's start getting things Neat
       </Typography>
       <form
         className={classnames(classes.container)}
@@ -45,8 +46,8 @@ const LogIn: React.SFC<LogInProps> = () => {
           margin='normal'
         />
       </form>
-      <Button variant='contained' color='secondary' fullWidth>
-        Secondary
+      <Button variant='contained' color='secondary'>
+        log in
       </Button>
     </Box>
   )

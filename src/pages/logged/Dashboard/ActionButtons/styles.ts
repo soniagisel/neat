@@ -6,7 +6,8 @@ export default makeStyles((theme: Theme) => ({
     display: 'flex',
     flexWrap: 'wrap',
     minWidth: 300,
-    width: '100%'
+    width: '100%',
+    paddingBottom: theme.spacing(5)
   },
   image: {
     position: 'relative',
