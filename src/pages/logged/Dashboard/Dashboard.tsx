@@ -26,8 +26,8 @@ const Dashboard: React.SFC<DashboardProps> = () => {
       >
         What would you like to do?
       </Typography>
-      <ActionButtons />
       <UpcomingTasks />
+      <ActionButtons />
     </React.Fragment>
   )
 }
