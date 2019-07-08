@@ -1,6 +1,7 @@
 import React from 'react'
 import { LogInProps } from './types'
 import { Box, Typography, TextField, Button } from '@material-ui/core'
+import Grid from '@material-ui/core/Grid'
 import useStyles from './styles'
 import classnames from 'classnames'
 
@@ -46,9 +47,15 @@ const LogIn: React.SFC<LogInProps> = () => {
           margin='normal'
         />
       </form>
-      <Button variant='contained' color='secondary'>
-        log in
-      </Button>
+      <Box display='flex' justifyContent='center'>
+        <Button
+          variant='contained'
+          color='primary'
+          className={classes.width15rem}
+        >
+          log in
+        </Button>
+      </Box>
     </Box>
   )
 }

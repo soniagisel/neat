@@ -22,10 +22,18 @@ export default makeStyles((theme: Theme) => ({
     paddingBottom: theme.spacing(5)
   },
   fontKrub: {
-    fontFamily: 'Krub',
-    fontWeight: 400
+    fontFamily: 'Krub'
   },
   button: {
     margin: theme.spacing(1)
+  },
+  width15rem: {
+    width: theme.spacing(30)
+  },
+  fontWeight400: {
+    fontWeight: 400
+  },
+  fontWeight100: {
+    fontWeight: 100
   }
 }))
