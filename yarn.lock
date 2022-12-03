@@ -1453,6 +1453,13 @@
     "@types/history" "*"
     "@types/react" "*"
 
+"@types/react-swipeable-views@^0.13.0":
+  version "0.13.1"
+  resolved "https://registry.yarnpkg.com/@types/react-swipeable-views/-/react-swipeable-views-0.13.1.tgz#381c8513deef5426623aa851033ff4f4831ae15c"
+  integrity sha512-Nuvywkv9CkwcUgItOCBszkc/pc8YSdiKV5E1AzOJ/p32Db50LgwhJFi5b1ANPgyWxB0Q5yn69aMURHyGi3MLyg==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react-transition-group@^2.0.16":
   version "2.9.2"
   resolved "https://registry.yarnpkg.com/@types/react-transition-group/-/react-transition-group-2.9.2.tgz#c48cf2a11977c8b4ff539a1c91d259eaa627028d"
@@ -3360,9 +3367,9 @@ decamelize@^2.0.0:
     xregexp "4.0.0"
 
 decode-uri-component@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
-  integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.2.tgz#e69dbe25d37941171dd540e024c444cd5188e1e9"
+  integrity sha512-FqUYQ+8o158GyGTrMFJms9qh3CqTKvAqgqsTnkLI8sKu0028orqBhxNMFkFen0zGyg6epACD32pjVk58ngIErQ==
 
 dedent@^0.7.0:
   version "0.7.0"
